@@ -22,7 +22,7 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res){
 	fs.readFile('./public/html/about.html', function(err, html){
 		if(err)console.log(err);
-		res.writeHeader(200, {'Content-Type': 'text/html'})
+		res.writeHeader(200, {'Content-Type': 'text/html'});
 		res.write(html);
 		res.end();
 	});
