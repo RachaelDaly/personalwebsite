@@ -19,6 +19,14 @@ app.get('/', function(req, res){
 	});
 });
 
+app.get('/resume', function(req, res){
+	fs.readFile('./public/pdf/resume.pdf', function(err, data){
+		if(err)console.log(err);
+		res.contentType('application/pdf');
+		res.send(data);
+	})
+})
+
 app.get('/about', function(req, res){
 	fs.readFile('./public/html/about.html', function(err, html){
 		if(err)console.log(err);
