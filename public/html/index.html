@@ -25,6 +25,19 @@
 		.tales {
   			width: 100%;
 		}
+		#title{
+			background-color: #b3ffff;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+		#navbar{
+			background-color: #2F4F4F;
+		}
+		#contact{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
 	</style>
 	<!-- Required meta tags -->
     <meta charset="utf-8">
@@ -36,45 +49,37 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   	<!-- Title -->
-  	<title>Hello World</title>
+  	<title>Rachael Daly</title>
 </head>
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 		<!-- em is relative size to browser 1 -->
-  		<a class="navbar-brand" href style="font-size: 1.5em">Welcome to Website!</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom: 5px">
+  		<a class="navbar-brand" href style="font-size: 1.5em; color:white"><strong>RACHAEL DALY</strong></a>
+  		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom: 5px">
     		<span class="navbar-toggler-icon"></span>
   		</button>
 
-	  	<div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="https://rachael-website.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="https://rachael-website.herokuapp.com/" style="color: white">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="https://rachael-website.herokuapp.com/about">About</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Dropdown
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
-		        </div>
+		        <a class="nav-link" href="https://github.com/RachaelDaly" style="color: white">GitHub</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Disabled</a>
+		        <a class="nav-link" href="https://www.linkedin.com/in/rachael-daly-33343a151/" style="color: white">LinkedIn</a>
 		      </li>
-		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://rachael-website.herokuapp.com/about" style="color: white">About Me</a>
+		      </li>
 	  	</div>
 	</nav>
+	<div id="title">
+		<h1 class="text-center"><strong>RACHAEL DALY</strong></h1>
+		<h4 class="text-center">Rochester Institute of Technology</h4>
+		<h5 class="text-center">Software Engineering BS</h5>
+	</div>
 </body>
 </html>
